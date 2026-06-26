@@ -12,9 +12,9 @@ import RSVPForm from './components/RSVPForm';
 import AdminPanel from './components/AdminPanel';
 import { RSVP } from './types';
 
-// Importing generated watercolor images
-const oliveBranches = '/src/assets/images/watercolor_olive_branches_1782404574582.jpg';
-const chapelWatercolor = '/public/wedding Parrish Padre Pio Watercolor paiting.jpeg';
+// IMPORTANTE: Asegúrate de que ambas imágenes estén dentro de la carpeta "public"
+const oliveBranches = '/watercolor_olive_branches_1782404574582.jpg';
+const chapelWatercolor = '/wedding Parrish Padre Pio Watercolor paiting.jpeg';
 
 export default function App() {
   const [rsvps, setRsvps] = useState<RSVP[]>([]);

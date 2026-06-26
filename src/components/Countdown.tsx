@@ -60,8 +60,8 @@ export default function Countdown() {
     { label: 'SEGUNDOS', value: timeLeft.seconds },
   ];
 
-  return (
-    <div className="flex flex-col items-center justify-center py-8" id="wedding-countdown-section">
+return (
+    <div className="flex flex-col items-center justify-center py-8" id="wedding-countdown-section" data-testid="countdown">
       <h3 className="font-sans text-xs tracking-[0.25em] text-gray-500 uppercase mb-5 font-semibold">
         Falta muy poco para el gran día
       </h3>
