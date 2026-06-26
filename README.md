@@ -120,7 +120,7 @@ La aplicación incluye generador de imágenes para redes sociales (OG images) co
 ### 🔗 Uso en redes sociales:
 Cuando compartas el enlace, se mostrará automáticamente la imagen OG con:
 - **Título**: "Fernanda & Diego — Invitación de Boda"
-- **Descripción**: "🤍 15 de Noviembre 2025 - Parroquia Padre Pio 🤍 ⛪ Únete a celebrar nuestro sagrado matrimonio. Confirma tu asistencia ✍️"
+- **Descripción**: "🤍 Sábado 23 de Enero de 2027 11:30 am Parroquia Padre Pio 🤍 ⛪ Únete a celebrar nuestro sagrado matrimonio. Confirma tu asistencia ✍️"
 - **Imagen**: Fotografía de la parroquia con diseño elegante
 
 ## 🔧 Configuración
