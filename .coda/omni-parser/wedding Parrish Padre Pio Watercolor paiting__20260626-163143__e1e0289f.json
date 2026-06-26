@@ -1,0 +1,25 @@
+{
+  "status": "success",
+  "parts": [
+    {
+      "type": "text",
+      "text": "Watercolor illustration of a small church building with a tall bell tower featuring a cross on top, arched wooden doors, and three small arched windows above the entrance. The scene includes greenery and bushes around the church, set against a plain white background. Keywords: watercolor church painting, small chapel, bell tower with cross, religious building illustration, arched wooden doors, greenery around church, architectural watercolor art, peaceful church scene."
+    }
+  ],
+  "requestId": "7be45b9c-55fd-4d06-adbd-6a75228fded0",
+  "usage": {
+    "total_tokens": 0,
+    "completion_tokens": 86,
+    "prompt_tokens": 979,
+    "prompt_cost": 0.0003916,
+    "completion_cost": 0.0001376,
+    "total_cost": 0.0005292,
+    "currency": "USD",
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  }
+}

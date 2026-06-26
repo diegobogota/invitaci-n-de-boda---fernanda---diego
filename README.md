@@ -91,10 +91,42 @@ src/
 - **Texto**: El contenido está hardcodeado en `App.tsx`
 - **Fecha**: Modifica la fecha en `Countdown.tsx`
 
+## 📸 Open Graph Image Generator
+
+La aplicación incluye generador de imágenes para redes sociales (OG images) con la parroquia Padre Pio.
+
+### 📁 Archivos OG:
+- `public/og-image.html` - Generador interactivo de imagen OG
+- `public/og-image.jpg` - Imagen final para redes sociales
+- `public/parroquia-padre-pio.jpg` - Imagen original de la parroquia
+
+### 🎨 Características OG:
+- **Dimensiones optimizadas**: 1200x630px
+- **Diseño elegante**: Gradiente dorado con imagen de parroquia
+- **Texto atractivo**: Invitación a confirmar asistencia
+- **Versión móvil**: Compatible con WhatsApp, Facebook, Instagram
+
+### 📱 Meta Tags Configurados:
+- **Facebook/Open Graph**: Título, descripción, imagen
+- **Twitter/X**: Card optimizado con imagen
+- **SEO**: Meta descripción y keywords
+
+### 🖼️ Cómo usar el generador:
+1. Abre `public/og-image.html` en el navegador
+2. Personaliza el diseño si es necesario
+3. Haz clic en "📸 Descargar imagen"
+4. La imagen se guardará como `fernanda-diego-og-image.jpg`
+
+### 🔗 Uso en redes sociales:
+Cuando compartas el enlace, se mostrará automáticamente la imagen OG con:
+- **Título**: "Fernanda & Diego — Invitación de Boda"
+- **Descripción**: "🤍 15 de Noviembre 2025 - Parroquia Padre Pio 🤍 ⛪ Únete a celebrar nuestro sagrado matrimonio. Confirma tu asistencia ✍️"
+- **Imagen**: Fotografía de la parroquia con diseño elegante
+
 ## 🔧 Configuración
 
 El proyecto utiliza localStorage para guardar las confirmaciones de asistencia. No requiere backend para funcionamiento básico.
 
 ## 📄 Licencia
 
-Copyright © 2027 Fernanda & Diego - Hecho con ❤️
+Copyright © 2025 Fernanda & Diego - Hecho con ❤️

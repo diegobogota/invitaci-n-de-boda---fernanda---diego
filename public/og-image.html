@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1200, initial-scale=1.0">
+    <title>OG Generator - Fernando & Diego</title>
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Georgia', serif;
+            background: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .og-container {
+            width: 1200px;
+            height: 630px;
+            position: relative;
+            overflow: hidden;
+            background: linear-gradient(135deg, #D4AF37 0%, #F7F5F0 50%, #8B4513 100%);
+            border-radius: 12px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        
+        .og-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('./parroquia-padre-pio.jpg');
+            background-size: cover;
+            background-position: center;
+            opacity: 0.3;
+        }
+        
+        .og-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle, transparent 30%, rgba(139, 69, 19, 0.7) 100%);
+        }
+        
+        .og-content {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 60px;
+            text-align: center;
+            color: #fff;
+        }
+        
+        .og-top {
+            margin-bottom: 30px;
+        }
+        
+        .og-church-icon {
+            font-size: 60px;
+            margin-bottom: 10px;
+        }
+        
+        .og-subtitle {
+            font-size: 24px;
+            font-weight: 400;
+            color: rgba(255,255,255,0.9);
+            font-style: italic;
+        }
+        
+        .og-names {
+            font-size: 82px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #fff;
+            text-shadow: 3px 3px 6px rgba(0,0,0,0.5), 0 0 30px rgba(212, 175, 55, 0.8);
+            line-height: 1;
+        }
+        
+        .og-ampersand {
+            color: #D4AF37;
+            margin: 0 20px;
+            display: inline-block;
+        }
+        
+        .og-dates {
+            font-size: 28px;
+            margin-bottom: 30px;
+            color: #fff;
+            font-weight: 500;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+        }
+        
+        .og-bible {
+            font-size: 26px;
+            margin-bottom: 40px;
+            color: rgba(255,255,255,0.95);
+            font-style: italic;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+            line-height: 1.4;
+        }
+        
+        .og-cta {
+            font-size: 32px;
+            padding: 20px 50px;
+            background: linear-gradient(135deg, #D4AF37, #B8941F);
+            color: white;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            transition: all 0.3s ease;
+            border: 3px solid rgba(255,255,255,0.3);
+        }
+        
+        .og-cta:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+        }
+        
+        .download-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            padding: 15px 25px;
+            background: #D4AF37;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 18px;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            z-index: 1000;
+        }
+        
+        .download-btn:hover {
+            background: #B8941F;
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+    <div id="og-image" class="og-container">
+        <div class="og-background"></div>
+        <div class="og-overlay"></div>
+        <div class="og-content">
+            <div class="og-top">
+                <div class="og-church-icon">⛪</div>
+                <div class="og-subtitle">Te invitamos a nuestro sagrado matrimonio</div>
+            </div>
+            <h1 class="og-names">
+                FERNANDA <span class="og-ampersand">&</span> DIEGO
+            </h1>
+            <div class="og-dates">
+                🤍 15 de Noviembre de 2025 🤍<br>
+                Parroquia Padre Pio
+            </div>
+            <div class="og-bible">
+                "Y los dos llegarán a ser una sola carne"<br>
+                — Génesis 2:24
+            </div>
+            <div class="og-cta">
+                ✍️ Confirma tu asistencia
+            </div>
+        </div>
+    </div>
+    
+    <button class="download-btn" onclick="downloadImage()">📸 Descargar imagen</button>
+    
+    <script>
+        function downloadImage() {
+            const element = document.getElementById('og-image');
+            
+            html2canvas(element, {
+                width: 1200,
+                height: 630,
+                scale: 2,
+                useCORS: true,
+                backgroundColor: null
+            }).then(canvas => {
+                const link = document.createElement('a');
+                link.download = 'fernanda-diego-og-image.jpg';
+                link.href = canvas.toDataURL('image/jpeg', 0.95);
+                link.click();
+            });
+        }
+        
+        // Auto-download after a short delay
+        setTimeout(() => {
+            console.log('📸 Para descargar la imagen, haz clic en el botón o usa la función del navegador para guardar como imagen');
+        }, 1000);
+    </script>
+</body>
+</html>
