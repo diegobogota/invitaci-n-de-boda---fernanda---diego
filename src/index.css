@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Alex+Brush&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-sans: "Montserrat", sans-serif;
+  --font-script: "Alex Brush", cursive;
+  --color-olive-50: #FDFBF7;
+  --color-olive-100: #F5F2EE;
+  --color-olive-200: #E5E0D8;
+  --color-olive-300: #D1C7B7;
+  --color-olive-400: rgba(74, 93, 78, 0.2);
+  --color-olive-500: #4A5D4E;
+  --color-olive-600: #3A4D3E;
+  --color-olive-700: #2D3D30;
+  --color-olive-900: #2D2D2D;
+  --color-gold-100: #F5F2EE;
+  --color-gold-200: #E5E0D8;
+  --color-gold-400: #A68B6D;
+  --color-gold-600: #8C8070;
+  --color-gold-700: #6F6456;
+}
+
+@layer utilities {
+  .writing-mode-vertical {
+    writing-mode: vertical-rl;
+  }
+}
+
+/* Base custom styles for wedding aesthetic */
+body {
+  background-color: var(--color-olive-50);
+  color: #2D2D2D;
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-serif);
+}
+

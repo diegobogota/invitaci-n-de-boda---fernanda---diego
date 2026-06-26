@@ -1,0 +1,6 @@
+{
+  "name": "Invitación de Boda - Fernanda & Diego",
+  "description": "Invitación interactiva para la boda de Fernanda y Diego. Incluye confirmación de asistencia (RSVP) vía WhatsApp, mapa de ubicación interactivo, cuenta regresiva y libro de firmas.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
